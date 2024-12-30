@@ -79,7 +79,7 @@ class MyClass {
     final int number;
 
     MyClass(int num) {
-        `this`.number = num;  // final 变量可以在构造方法中赋值一次
+        this.number = num;  // final 变量可以在构造方法中赋值一次
     }
 
     public void display() {
