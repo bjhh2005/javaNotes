@@ -357,7 +357,7 @@ public class Main {
 }
 ```
 
-####  abstract` 类和 `interface` 的主要区别
+####  `abstract` 类和 `interface` 的主要区别
 
 | **区别点**               | **`abstract` 类**                                      | **`interface` 接口**                                  |
 |--------------------------|--------------------------------------------------------|------------------------------------------------------|
@@ -455,6 +455,7 @@ The area of the circle is: 78.53981633974483
 ### 设计一个Java程序
 
 **包含一个static方法，该方法不接受任何参数，并打印出当前类的名称。**
+
 ```java
 public class MyClass {
 
@@ -741,7 +742,7 @@ Error closing file resources: null
 
 ### Java Checked和Unchecked异常的区别
 
-**描述Java中`Checke`异常和`Unchecked`异常（运行时异常）之间的区别，并给出每种异常的一个例子。**
+**描述Java中`Checked`异常和`Unchecked`异常（运行时异常）之间的区别，并给出每种异常的一个例子。**
 - **Checked 异常（已检查异常）:**`Checked` 异常是指那些在编译时被检查的异常。Java 编译器会要求程序员**明确地处理**这些异常（通常是通过 `try-catch` 块，或者通过 `throws` 声明）。如果程序中抛出了一个 `Checked` 异常，而没有适当的处理或声明，编译器将报错，例如`IOException`。
 - **Unchecked 异常（运行时异常）:**`Unchecked `异常是指那些在编译时不需要强制检查的异常。它们是 `RuntimeException` 类及其子类的实例。程序员非必须在代码中显式地捕获这些异常，也非必须通过 throws 声明它们。这些异常通常是由程序的逻辑错误或不可预见的情况引起的，例如`NullPointerException`、`ArrayIndexOutOfBoundsException`。
 ```java
