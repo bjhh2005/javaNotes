@@ -3564,7 +3564,7 @@ public class Main {
 
 
 
-**（2）编程题：**定义一个接口`RunnableTask`，包含一个方法run()。实现这个接口，并创建一个方法`executeTask(RunnableTask task)`，它接受`RunnableTask`接口作为参数并执行run()方法。
+**（2）编程题：**定义一个接口`RunnableTask`，包含一个方法`run()`。实现这个接口，并创建一个方法`executeTask(RunnableTask task)`，它接受`RunnableTask`接口作为参数并执行run()方法。
 
 ```java
 interface RunnableTask{
@@ -3718,7 +3718,7 @@ public class Main {
 
 
 
-**（2）编程题：**创建一个基类Animal和一个子类Dog。Animal有一个成员变量name和一个构造器。Dog也有一个成员变量breed和一个构造器。展示在创建Dog对象时成员变量的初始化顺序。
+**（2）编程题：**创建一个基类`Animal`和一个子类`Dog`。`Animal`有一个成员变量`name`和一个构造器。`Dog`也有一个成员变量`breed`和一个构造器。展示在创建`Dog`对象时成员变量的初始化顺序。
 
 ```java
 abstract class Animal{
@@ -3744,6 +3744,14 @@ public class Main {
         Dog dog = new Dog("Dog", "Bob");
     }
 }
+```
+
+**输出结果**
+
+```java
+Animal created
+Dog created
+Bob created
 ```
 
 ---
@@ -3883,9 +3891,9 @@ public class Book {
 #### 定义
 
 
-- **静态方法** ：用static关键字定义的方法。它属于类本身，而不是类的某个实例。
+- **静态方法** ：用`static`关键字定义的方法。它属于类本身，而不是类的某个实例。
 
-- **非静态方法** ：没有static关键字的方法。它属于类的实例（对象），需要通过对象来调用。
+- **非静态方法** ：没有`static`关键字的方法。它属于类的实例（对象），需要通过对象来调用。
 
 
 
@@ -3894,14 +3902,14 @@ public class Book {
 
  **静态方法的调用：** 
 
-- 可以通过类名直接调用，例如：ClassName.staticMethod()
+- 可以通过类名直接调用，例如：`ClassName.staticMethod()`
 
-- 也可以通过对象调用，但不推荐，因为静态方法与对象无关，例如：objectName.staticMethod()
+- 也可以通过对象调用，但不推荐，因为静态方法与对象无关，例如：`objectName.staticMethod()`
 
 
  **非静态方法的调用：**
 
-- 必须通过对象来调用，例如：objectName.nonStaticMethod()
+- 必须通过对象来调用，例如：`objectName.nonStaticMethod()`
 
 - 不能通过类名直接调用。
 
@@ -3924,8 +3932,7 @@ public class Book {
 
 
 
-
-**编程题**：创建一个类MathUtils，包含一个静态方法add(int a, int b)和一个非静态方法subtract(int a, int b)。在主方法中调用这两个方法，并解释调用方式的不同。
+**编程题**：创建一个类`MathUtils`，包含一个静态方法`add(int a, int b)`和一个非静态方法`subtract(int a, int b)`。在主方法中调用这两个方法，并解释调用方式的不同。
 
 ```java
 public class MathUtils {
@@ -3976,8 +3983,7 @@ public class MathUtils {
 
 
 
-
-**编程题**：创建一个类Person，包含一个非静态成员变量name和一个静态方法printName(String name)。展示如何在静态方法中访问非静态成员变量。
+**编程题**：创建一个类`Person`，包含一个非静态成员变量`name`和一个静态方法`printName(String name)`。展示如何在静态方法中访问非静态成员变量。
 
 ```java
 public class Person {
@@ -4020,8 +4026,7 @@ public class Person {
 
 
 
-
-**编程题**：创建一个类Product，包含一个静态方法loadConfig()和一个构造器。在构造器中调用loadConfig()方法，并在静态方法中创建Product对象。
+**编程题**：创建一个类`Product`，包含一个静态方法`loadConfig()`和一个构造器。在构造器中调用`loadConfig()`方法，并在静态方法中创建`Product`对象。
 
 ```java
 public class Product {
@@ -4116,8 +4121,7 @@ public class Singleton {
 
 
 
-
-**编程题**：设计一个单例类DatabaseConnection，包含一个类变量instance和一个静态方法getInstance()。确保getInstance()方法返回类的唯一实例。
+**编程题**：设计一个单例类`DatabaseConnection`，包含一个类变量`instance`和一个静态方法`getInstance()`。确保`getInstance()`方法返回类的唯一实例。
 
 
 ```java
@@ -4223,7 +4227,7 @@ public class Main {
 
 
 
-**编程题**：创建一个基类Shape和一个子类Circle。Shape类包含一个静态方法calculateArea()。在Circle类中重写这个方法，并在主方法中调用这两个方法。
+**编程题**：创建一个基类`Shape`和一个子类`Circle`。`Shape`类包含一个静态方法`calculateArea()`。在`Circle`类中重写这个方法，并在主方法中调用这两个方法。
 
 ```java
 // 基类 Shape
@@ -4269,7 +4273,7 @@ public class Main {
 
 **易错点（记住静态方法与非静态方法在重写后的区别）**
 
-- 最后使用父类 Shape 的引用指向子类 Circle 的实例，调用 shape.calculateArea() 时，仍然调用的是**父类的静态方法** Shape.calculateArea()，并不是子类的 Circle.calculateArea()。
+- 最后使用父类 `Shape` 的引用指向子类 `Circle` 的实例，调用 `shape.calculateArea()` 时，仍然调用的是**父类的静态方法** `Shape.calculateArea()`，并不是子类的 `Circle.calculateArea()`。
 
 ---
 
@@ -5166,7 +5170,7 @@ public class Main {
 解释Java中基本数据类型和它们的包装类之间如何进行自动装箱和拆箱。
 
 
-在Java中，基本数据类型（primitive types）和它们的包装类（wrapper classes）之间的转换称为自动装箱（autoboxing）和拆箱（unboxing）。这两个过程使得基本数据类型和对象之间的转换变得更加简单和直观。
+在Java中，基本数据类型（primitive types）和它们的包装类（wrapper classes）之间的转换称为**自动装箱（autoboxing）和拆箱（unboxing）**。这两个过程使得基本数据类型和对象之间的转换变得更加简单和直观。
 
 
 #### 基本数据类型和包装类
