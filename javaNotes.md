@@ -5227,7 +5227,7 @@ System.out.println(wrappedInt); // 输出: 5
 
 ```
 
-在这个例子中，`int` 类型的 `primitiveInt` 被自动转换为 Integer 类型的 wrappedInt。
+在这个例子中，`int` 类型的 `primitiveInt` 被自动转换为` Integer `类型的 `wrappedInt`。
 
 
 
@@ -5250,7 +5250,7 @@ System.out.println(primitiveInt); // 输出: 10
 
 
 
-**编程题** 编写一个Java程序，将`Integer`对象转换为int基本类型，并演示自动拆箱的过程。
+**编程题** 编写一个Java程序，将`Integer`对象转换为`int`基本类型，并演示自动拆箱的过程。
 
 
 ```java
@@ -5609,12 +5609,10 @@ public class ArrayCovarianceExample {
         animals[0].makeSound(); // 输出: Bark
     }
 }
-
-
 ```
 
 
-在这个例子中，Dog[] 被赋值给 Animal[]，这是一种协变行为。当我们调用 makeSound() 方法时，仍然会执行 Dog 类中重写的实现。
+在这个例子中，`Dog[] `被赋值给 `Animal[]`，这是一种协变行为。当我们调用 `makeSound()` 方法时，仍然会执行 `Dog` 类中重写的实现。
 
 
 #### 为什么数组不能进行泛型的协变
